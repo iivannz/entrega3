@@ -1,0 +1,46 @@
+/* ============================== */
+/*           Reset/Base           */
+/* ============================== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================== */
+/*        Header/Nav Bar          */
+/* ============================== */
+
+nav {
+  background: linear-gradient(45deg, #B22222, #8B0000);
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/* --------         Logo Nav         --------*/
+.logo {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border: 2px solid black;
+}
+
+/* --------         Botones Nav         --------*/
+
+nav a.btn {
+  border: 2px solid #ffcc80;
+  color: white;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+}
+
+nav a.btn:hover {
+  background-color: white;
+  color: #5a0000;
+  text-decoration: none;
+}
