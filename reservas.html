@@ -52,18 +52,19 @@
     </nav>
   </header>
 
-  <section id="reservas" class="seccion">
-  <h2>Reservá tu turno</h2>
-  <form class="formulario" action="#" method="post">
-    <input type="text" name="nombre" placeholder="Tu nombre" required>
-    <input type="email" name="email" placeholder="Correo electrónico" required>
-    <input type="date" name="fecha" required>
-    <input type="time" name="hora" required>
-    <input type="number" name="personas" placeholder="Personas" min="1" required>
-    <textarea name="mensaje" placeholder="Mensaje adicional (opcional)" rows="4"></textarea>
-    <button type="submit">Reservar</button>
-  </form>
-</section>
+<section class="reserva-seccion">
+    <h2>Formulario de reserva</h2>
+    <form class="reserva-form" action="#" method="post">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <input type="date" name="fecha" required>
+      <input type="time" id="hora" name="hora" min="09:00" max="18:00" placeholder="Horario de atención: 09:00 a 18:00" required>
+      <input type="number" name="personas" placeholder="Cantidad de Personas" min="1" max="6" required>
+      <textarea name="mensaje" placeholder="Mensaje adicional (opcional)" rows="4"></textarea>
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
 
 <section id="contacto" class="seccion">
   <h3>Contacto</h3>
