@@ -6,6 +6,9 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+html {
+overflow-y: scroll;
+}
 
 /* ============================== */
 /*        Header/Nav Bar          */
@@ -49,4 +52,5 @@ background-color: white;
 color: #5a0000;
 text-decoration: none;
 }
+
 
