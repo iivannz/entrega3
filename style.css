@@ -44,3 +44,9 @@ nav a.btn:hover {
   color: #5a0000;
   text-decoration: none;
 }
+nav a.btn.active {
+  background-color: white;
+  color: #5a0000;
+  text-decoration: none;
+}
+
