@@ -6,6 +6,9 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+html {
+overflow-y: scroll;
+}
 
 /* ============================== */
 /*        Header/Nav Bar          */
@@ -50,3 +53,71 @@ color: #5a0000;
 text-decoration: none;
 }
 
+
+/* ============================== */
+/*           Reservas             */
+/* ============================== */
+
+/* --------         Formulario         --------*/
+
+.reserva-seccion {
+padding: 2rem;
+max-width: 700px;
+margin: 3rem auto 2rem;
+border-radius: 12px;
+background-color: #fff0d9;
+border: 2px solid #B22222;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reserva-form {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.reserva-form input,
+.reserva-form textarea {
+padding: 0.75rem;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+background-color: #fff8f0;
+}
+
+.reserva-form button {
+background-color: #B22222;
+color: white;
+border: none;
+padding: 0.75rem;
+font-size: 1rem;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.reserva-form button:hover {
+background-color: #8B0000;
+}
+
+/* --------         Contacto         --------*/
+
+.reserva-contacto {
+max-width: 700px;
+margin: 0 auto 2rem;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+
+.subrayado {
+text-decoration: underline;
+}
+
+.whatsapp-icon {
+font-size: 1.3rem;
+margin-right: 0.3rem;
+}
+
+.whatsapp-link {
+text-decoration: none;
+}
