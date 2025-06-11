@@ -9,6 +9,13 @@ box-sizing: border-box;
 html {
 overflow-y: scroll;
 }
+/* ============================== */
+/*              Body              */
+/* ============================== */
+
+body {
+padding-top: 80px; 
+}
 
 /* ============================== */
 /*        Header/Nav Bar          */
@@ -20,6 +27,11 @@ font-family: 'Montserrat', sans-serif;
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 padding-top: 0.5rem;
 padding-bottom: 0.5rem;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
 }
 /* --------         Logo Nav         --------*/
 .logo {
@@ -51,6 +63,62 @@ nav a.btn.active {
 background-color: white;
 color: #5a0000;
 text-decoration: none;
+}
+
+
+/* ============================== */
+/*            Footer              */
+/* ============================== */
+
+.footer {
+background-color: #a4161a;
+color: #fff;
+text-align: center;
+padding: 1rem 0;
+font-family: 'Montserrat', sans-serif;
+margin-top: 4rem;
+box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+/* ============================== */
+/*            Carta               */
+/* ============================== */
+
+.carta {
+max-width: 700px;
+margin: 2rem auto;
+padding: 2rem;
+background: #fff;
+border-radius: 16px;
+box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+font-family: 'Montserrat', sans-serif;
+line-height: 1.6;
+}
+
+.carta h2 {
+border-bottom: 2px solid #8B0000;
+color: #8B0000;
+padding-bottom: 0.25rem;
+margin-top: 2rem;
+font-size: 1.5rem;
+}
+
+.carta ul {
+list-style: none;
+padding: 0;
+margin: 0.5rem 0 1.5rem;
+}
+
+.carta li {
+display: flex;
+justify-content: space-between;
+padding: 0.5rem 0;
+border-bottom: 1px dashed #ddd;
+}
+
+.carta li span:last-child {
+color: #444;
+font-weight: bold;
 }
 
 
@@ -225,16 +293,19 @@ height: 100%;
 
 .galeria-grid figure:hover {
 transform: scale(1.03);
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .galeria-item {
 display: flex;
 flex-direction: column;
 height: 100%;
+gap: 0.5rem;
 }
 
 .galeria-item img {
 object-fit: cover;
+aspect-ratio: 4 / 3;
 height: 200px;
 width: 100%;
 }
@@ -248,6 +319,8 @@ color: #333;
 .galeria-full {
 grid-column: span 3;
 }
+
+/* --------         Texto         --------*/
 
 .text-center {
 max-width: 700px;
