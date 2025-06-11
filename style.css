@@ -81,6 +81,93 @@ box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
 }
 
 /* ============================== */
+/*            Inicio              */
+/* ============================== */
+
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imagen-rotativa {
+animation: girar 20s linear infinite;
+display: block;
+margin: 0 auto;
+width: 200px;
+}
+
+.hero {
+background: url('assets/img/fondoresto.jpg') no-repeat center center/cover;
+height: 100vh;
+position: relative;
+color: #fff;
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* o lo que necesites */
+  color: white; /* si necesitás que el texto se vea encima */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/fondo.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero .container {
+z-index: 2;
+position: relative;
+}
+
+.hero::before {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.5); /* oscurece imagen para mejor legibilidad */
+z-index: 1;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.divider .line {
+  height: 1px;
+  width: 60px;
+  background-color: #B22222; /* o el color que uses */
+}
+
+.divider i {
+  color: #B22222;
+  font-size: 1.5rem;
+}
+
+.sobre-nosotros h2 {
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+max-width: 700px;
+margin: 0 auto 2rem;
+text-align: center;
+
+}
+
+.sobre-nosotros p {
+font-size: 1.1rem;
+line-height: 1.6;
+max-width: 700px;
+margin: 0 auto 2rem;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+
+/* ============================== */
 /*            Carta               */
 /* ============================== */
 
