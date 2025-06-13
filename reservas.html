@@ -23,31 +23,53 @@
 
 <body>
   <header>
-    <nav class="d-flex justify-content-between align-items-center px-3" style="height: 80px;">
-      <div class="d-flex align-items-center h-100">
-        <a href="index.html" class="h-100 d-flex align-items-center">
+    <nav class="navbar navbar-expand-lg bg-light px-3" style="height: 80px;">
+      <div class="container-fluid">
+    <!-- Logo -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
           <img src="assets/img/LogoResto.png" alt="Logo Restaurante" class="logo">
         </a>
-      </div>
-      <div class="text-white fw-bold fs-4 text-center">
-        Resto Iván
-      </div>
-      <div class="d-flex flex-wrap gap-2">
-        <a href="index.html" class="btn btn-outline-light">
-          <i class="bi bi-house me-1"></i>Inicio
-        </a>
-        <a href="carta.html" class="btn btn-outline-light">
-          <i class="bi bi-journal-text me-1"></i>Carta
-        </a>
-        <a href="reservas.html" class="btn btn-outline-light active">
-          <i class="bi bi-calendar-check me-1"></i>Reservas
-        </a>
-        <a href="ubicacion.html" class="btn btn-outline-light">
-          <i class="bi bi-geo-alt-fill me-1"></i>Ubicación
-        </a>
-        <a href="galeria.html" class="btn btn-outline-light">
-          <i class="bi bi-images me-1"></i>Galería
-        </a>
+
+    <!-- Toggler (menú hamburguesa en móviles) -->
+        <button class="navbar-toggler text-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <!-- Título central -->
+        <div class="mx-auto text-black fw-bold fs-5 text-center text-black">
+      Resto Iván
+        </div>
+
+    <!-- Contenido del navbar -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContenido">
+          <ul class="navbar-nav d-flex flex-wrap gap-2 ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="btn btn-outline-light">
+                <i class="bi bi-house me-1"></i>Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="carta.html" class="btn btn-outline-light">
+                <i class="bi bi-journal-text me-1"></i>Carta
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="reservas.html" class="btn btn-outline-light active">
+                <i class="bi bi-calendar-check me-1"></i>Reservas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="ubicacion.html" class="btn btn-outline-light">
+                <i class="bi bi-geo-alt-fill me-1"></i>Ubicación
+              </a>
+            </li>
+            <li class="nav-item">
+                <a href="galeria.html" class="btn btn-outline-light">
+                  <i class="bi bi-images me-1"></i>Galería
+                </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
