@@ -38,14 +38,19 @@ top: 0;
 left: 0;
 width: 100%;
 z-index: 1000;
+height: 56px;
+line-height: 56px;
 }
+
 nav .mx-auto {
 position: absolute;
 left: 50%;
-transform: translateX(-50%);
-top: 50%;
+  top: 50%;
 transform: translate(-50%, -50%);
-pointer-events: none; /* para que no interfiera con clicks */
+pointer-events: none;
+height: 40px;
+line-height: 40px;
+white-space: nowrap;
 }
 
 
@@ -87,9 +92,25 @@ width: auto;
 }
 
 .navbar-toggler {
-  border: none;
+width: 40px;
+height: 40px;
+padding: 0;
+margin: 0;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+z-index: 1051;
+vertical-align: middle;
 }
 
+.navbar-toggler-icon {
+width: 24px;
+height: 24px;
+transition: none !important;
+display: block;
+}
 .hero-img {
 width: 100%;
 max-height: 70vh;
@@ -104,8 +125,30 @@ font-size: clamp(1rem, 4vw, 2rem);
 @media (max-width: 992px) {
   .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.7);
-    transition: background-color 0.3s ease;
-    padding: 1rem;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    transform-origin: top center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: scaleY(0.95);
+    height: auto !important;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+  }
+
+  .navbar-collapse.collapsing {
+    transition: none !important;
+    opacity: 0;
+    transform: scaleY(0.95);
+  }
+
+  .navbar-collapse.show {
+    opacity: 1;
+    transform: scaleY(1);
   }
 
   .navbar-collapse .btn {
