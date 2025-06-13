@@ -47,6 +47,8 @@ top: 50%;
 transform: translate(-50%, -50%);
 pointer-events: none; /* para que no interfiera con clicks */
 }
+
+
 /* --------         Logo Nav         --------*/
 .logo {
 height: 100%;
@@ -97,22 +99,38 @@ object-fit: cover;
 .hero-text {
 font-size: clamp(1rem, 4vw, 2rem);
 }
-/* --------         Media Responsive         --------*/
+/* -------- Media Responsive NavBar -------- */
 
-/* Centrado y visibilidad del título */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+    padding: 1rem;
+  }
 
-@media (max-width: 576px) {
-  nav .mx-auto {
-    font-size: 1rem; /* más pequeño en móviles */
+  .navbar-collapse .btn {
+    color: white;
+    border-color: white;
+  }
+
+  .navbar-collapse .btn:hover {
+    background-color: white;
+    color: #212529;
   }
 }
 
 @media (max-width: 768px) {
   .navbar-nav .nav-item a span {
-    display: none; /* Oculta texto */
+    display: none;
   }
   .navbar-nav .nav-item a i {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  nav .mx-auto {
+    font-size: 1rem;
   }
 }
 
@@ -507,7 +525,33 @@ font-family: 'Montserrat', sans-serif;
 text-decoration: underline
 }
 
+/* --------Media Responsive Galeria--------*/
 
+@media (max-width: 992px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galeria-full {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .galeria-full {
+    grid-column: span 1;
+  }
+
+  .galeria-item img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+}
 
 
 
