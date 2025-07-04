@@ -32,15 +32,11 @@ Sitio Web del proyecto final de la cursada de Desarrollo Web.
 ## 🛠️ Tecnologías utilizadas
 
 - HTML5
+- CSS
 - SCSS (SASS)
 - Bootstrap 5
 - Git + GitHub
+  
 
 ---
 
-## 🔧 Instalación y uso (opcional)
-
-Para compilar el SCSS localmente:
-
-```bash
-sass --watch sass/_main.scss:main.css
